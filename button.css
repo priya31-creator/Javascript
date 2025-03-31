@@ -1,0 +1,18 @@
+.bag-class{
+    background-color: lightgreen;
+    border: none;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+.wish-class{
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
