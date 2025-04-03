@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Bat Ball Stump Game </h1>
+    <button onclick=" playgame('Bat')" >Bat</button>
+    <button onclick=" playgame('Ball')"> Ball</button>
+    <button onclick=" playgame('Stump')"> Stump</button>
+    <script>
+        function playgame(usermove){
+            let computer_choice;
+            let random_num= Math.floor(Math.random()*3);
+            if (random_num>0 && random_num<=1)
+        {
+            computer_choice ='Bat';
+
+        }
+        else if (random_num>1 && random_num<=2)
+        {
+            computer_choice='Ball';
+
+
+        }
+        else{
+
+            computer_choice='Stump';
+        }
+        let result_game;
+        if (usermove==computer_choice){
+            alert ( `you choose ${usermove} and the computer choice is ${computer_choice} . its a tie`);
+        }
+        else if ( usermove=='Bat' &&  computer_choice=='Ball' || usermove == 'Ball' && computer_choice=='Stump' || usermove=='Bat' && computer_choice=='Stump')
+        {
+            alert ( `you choose ${usermove} and the computer choice is ${computer_choice} . you win`);
+        }
+        else{
+            alert ( `you choose ${usermove} and the computer choice is ${computer_choice} . computer win `)
+        }
+    }
+    </script>
+</body>
+</html>
